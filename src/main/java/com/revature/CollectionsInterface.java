@@ -9,20 +9,24 @@ public class CollectionsInterface {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		Collection<Integer> count = new ArrayList<Integer>(5);
-		count.add(18);
-		count.add(5);
+		Collection<Integer> list = new ArrayList<Integer>(5);
+		list.add(18);
+		list.add(5);
+		list.add(27);
+		list.add(11);
+		list.add(48);
 		
-		
-		for (Integer number : count) {
+		for (Integer number : list) {
 			System.out.println("Number is: " + number);
 		}
 		
-		Collection<Integer> count2 = new ArrayList<Integer>();
+		Collection<Integer> list2 = new ArrayList<Integer>();
 		
-		count2.addAll(count);
-		System.out.println("Now the new ArrayList = " + count2);
+		list2.addAll(list);
+		list2.remove(5);
+		System.out.println("Now the new ArrayList = " + list2);
 		
+		System.out.println(list2.size());
 	}
 
 }
