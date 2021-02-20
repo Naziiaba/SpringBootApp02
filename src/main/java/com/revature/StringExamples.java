@@ -13,6 +13,9 @@ public class StringExamples {
 		String str3 = sb.toString();
 		System.out.println("A new string contains " + str3);
 
+		String str4 = "Programming ";
+		String joining2Strings = str4.concat(str3);
+		System.out.print("Joined Strings are: " + joining2Strings);
 	}
 
 }
