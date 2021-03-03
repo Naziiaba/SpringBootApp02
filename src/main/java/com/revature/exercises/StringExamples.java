@@ -20,6 +20,7 @@ public class StringExamples {
 		String joining2Strings = str4.concat(str3);
 		System.out.print("Joined Strings are: " + joining2Strings);
 		
+		//These following Strings need to be separated
 		ArrayList<String> list = new ArrayList<String>();
 		list.add("Java");
 		list.add("Python");
