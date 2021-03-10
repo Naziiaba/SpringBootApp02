@@ -22,9 +22,18 @@ public class CollectionsLinkedList {
 	    Object last_element = cities.getLast();
 	    System.out.println("The Lastst Element: " + last_element);
 	    
+	    //Swapping elements in the list
+	    Collections.swap(cities, 2, 3);
+	    System.out.println("Swapped elements " + cities);  
+		
+	    //Shuffle method
+		Collections.shuffle(cities);
+	    System.out.println("After shuffling " + cities);
+	    
 	    //To remove all elements, we use .clear() method for LinkedList
 	    cities.clear();
 	    System.out.println("Final list " + cities);   //Final list []
+	    
 
 	}
 
