@@ -18,6 +18,7 @@ public class CollectionsLinkedList {
 	      System.out.println(itr.next());
 	    }
 	    
+	    //To get the first element
 	    Object first_element = cities.getFirst();
 	    System.out.println("The First Element: " + first_element);
 		
