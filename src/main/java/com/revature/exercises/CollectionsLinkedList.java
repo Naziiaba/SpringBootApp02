@@ -12,6 +12,12 @@ public class CollectionsLinkedList {
 	    cities.add("Istanbul");
 	    System.out.println("The original list " + cities);
 	    
+	    // this is iterating the elements starting from index 2;
+	    Iterator itr = cities.listIterator(2);
+	    while(itr.hasNext()) {
+	      System.out.println(itr.next());
+	    }
+	    
 	    Object first_element = cities.getFirst();
 	    System.out.println("The First Element: " + first_element);
 		
@@ -21,6 +27,9 @@ public class CollectionsLinkedList {
 	    
 	    Object last_element = cities.getLast();
 	    System.out.println("The Lastst Element: " + last_element);
+	    
+		//To test if the list is empty or not
+	    System.out.println(cities.isEmpty());  //false
 	    
 	    //Swapping elements in the list
 	    Collections.swap(cities, 2, 3);
