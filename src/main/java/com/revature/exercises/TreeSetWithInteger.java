@@ -15,13 +15,20 @@ public class TreeSetWithInteger {
 	        
 	      treeheadset = (TreeSet)ts.headSet(7);
 	      
-	      //Creating an iterator
-	      Iterator iterator;
-	      iterator = treeheadset.iterator();
+	    //Creating an iterator
+	    Iterator iterator;
+	    iterator = treeheadset.iterator();
 
 	    System.out.println("TreeSet data: ");    
 	    while(iterator.hasNext()) {
 	       System.out.println(iterator.next() + " ");
 	    }
+	    //Retrieving specific elements
+	    System.out.println("Greater than 14: " + ts.floor(14));
+	    System.out.println("Strictly greater than 6: " + ts.higher(6));
+	    
+	    System.out.println("Removing the first element " + ts.pollFirst());
+	    
+	    System.out.println("Removing 6: " + ts.remove(6));
 	}
 }
