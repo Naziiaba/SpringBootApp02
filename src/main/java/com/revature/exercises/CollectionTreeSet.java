@@ -32,6 +32,13 @@ public class CollectionTreeSet {
 	    for (String a : ts) {
 	      System.out.println(tstwo.contains(a) ? "Yes" : "No");
 	    }
+	    
+	     Iterator itr = ts.descendingIterator();
+	     System.out.println("Reversed elements:" );
+	     
+	     while (itr.hasNext()) {
+	         System.out.println(itr.next());
+	       }
 	  }
 }
 
