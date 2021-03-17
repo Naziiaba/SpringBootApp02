@@ -2,6 +2,7 @@ package com.revature.exercises;
 import java.util.*;
 
 public class CollectionHashSet {
+	@SuppressWarnings("unchecked")
 	public static void main(String[] args) {
 	    
 	    // Hashset used for search, insert and delete. 
